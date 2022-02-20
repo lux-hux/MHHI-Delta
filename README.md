@@ -5,8 +5,7 @@ The code is a Python build of the following explanation and worked example of MH
 
 ![](MHHI_Delta_Formula.png)
           
-
-
-          
-              
-                    
+- β_ij is the fraction of shares in firm j controlled by investor i,
+- β_ik is the fraction of shares in firm k controlled by investor i,
+- s_j is the market share of firm j, 
+- s_k is the market share of firm k,
