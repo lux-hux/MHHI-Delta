@@ -8,8 +8,8 @@ The code is a Python build of the following explanation and worked example of MH
 
 **Environment**
 
-3.9.2 Python Installation
-1.2.4 Pandas Module 
+- 3.9.2 Python Installation
+- 1.2.4 Pandas Module 
 
 **Formula**
 
