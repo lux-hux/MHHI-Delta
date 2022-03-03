@@ -8,7 +8,7 @@ import numpy as np
 # Change environment to location of files 
 user = getpass.getuser()
 
-os.chdir('/Users/' + user + '/Desktop/Common Ownership')
+os.chdir('/Users/' + user + '/Documents/GitHub/MHHI-Delta')
 
 # STEP 1 | List firms and market shares
 companies_csv = pd.read_csv('INPUT_companies.csv')
@@ -48,7 +48,7 @@ for company_outer in companies_csv.index[0:]:
             company_pairs_df.loc[counter, 'Company 1'] = companies_csv.loc[company_inner, 'Companies']
             company_pairs_df.loc[counter, 'Company 2'] = companies_csv.loc[company_outer, 'Companies']
             # STEP 7 | "Multiply the market shares of the two firms"
-            company_pairs_df.loc[counter, 'Cross Market Share Product'] = companies_csv.loc[company_inner, 'Ownership Share'] * companies_csv.loc[company_outer, 'Ownership Share']
+            company_pairs_df.loc[counter, 'Cross Market Share Product'] = companies_csv.loc[company_inner, 'MarketShare'] * companies_csv.loc[company_outer, 'MarketShare']
             counter += 1
         else:
             continue
