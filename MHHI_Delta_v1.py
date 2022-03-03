@@ -4,11 +4,14 @@ import getpass
 import pandas as pd 
 import itertools as it
 import numpy as np
+import inspect
 
-# Change environment to location of files 
-user = getpass.getuser()
+# Change directory to where the script is located
 
-os.chdir('/Users/' + user + '/Documents/GitHub/MHHI-Delta')
+full_path = os.path.realpath(__file__)
+file_path = os.path.dirname(full_path)
+
+os.chdir(file_path)
 
 # STEP 1 | List firms and market shares
 companies_csv = pd.read_csv('INPUT_companies.csv')
