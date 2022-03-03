@@ -2,9 +2,6 @@
 import os
 import getpass
 import pandas as pd 
-import itertools as it
-import numpy as np
-import inspect
 
 # Change directory to where the script is located
 
@@ -123,5 +120,7 @@ for company_pair in ownership_product_df.index[0:]:
 ownership_product_df['MHHI-Delta Final'] = ownership_product_df['Cross MHHI-Delta Numerator'] / ownership_product_df['Cross MHHI-Delta Denominator']
 
 MHHI_delta = ownership_product_df['MHHI-Delta Final'].sum() * 10000
+
+print('MHHI-Delta calculated as:')
 
 print(MHHI_delta)
