@@ -4,7 +4,9 @@
 
 MHHI Delta is an antitrust measure for an industry which incorporates the degree to which common ownership may lead to market collusion. Common ownership is the concept that competitors who share the same owner have an incentive to maximise industry profits rather than firm profits. For instance, an investor who has an ownership stake in multiple firms operating within the same industry does not want those firms to compete on price if doing so comes at the expense of overall industry profitability.
 
-The code is a Python build of the following explanation and worked example of MHHI Delta: https://truthonthemarket.com/2018/08/16/lowering-the-barriers-to-entry-to-the-common-ownership-debate-a-relatively-non-technical-explanation-of-mhhi-delta/ 
+The code is a Python build of the following explanation and worked example of MHHI Delta: https://truthonthemarket.com/2018/08/16/lowering-the-barriers-to-entry-to-the-common-ownership-debate-a-relatively-non-technical-explanation-of-mhhi-delta. The python script takes two .csv files as inputs, the market share of companies (INPUT_companies.csv) and the ownership of each of the companies by investors (INPUT_investor_ownership.csv).
+          
+ 
 
 **Environment**
 
